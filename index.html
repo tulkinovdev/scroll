@@ -2,90 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll smooth</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minimalist scroll experience — smooth, fast, and beautifully crafted modern web template by Oqilbek.">
+  <meta name="theme-color" content="#0f1117">
+  <title>Minimalist Scroll — Creative Web Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/title-logo.png">
 </head>
 
 <body>
 
-    <div id="preloader">Loading... <br> Powered by Oqilbek</div>
+  <!-- Preloader -->
+  <div id="preloader" role="status" aria-label="Loading page content">
+    <div class="preloader-inner">
+      <div class="preloader-logo" aria-hidden="true">OS</div>
+      <div class="preloader-bar" aria-hidden="true"><span></span></div>
+      <p class="preloader-text">Powered by tulkinovdev</p>
+    </div>
+  </div>
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 
-    <section>
-        <h1>Lorem, ipsum dolor.</h1>
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav id="navbar" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Home — OS">OS</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#section-1" class="nav-link">Features</a></li>
+        <li><a href="#section-2" class="nav-link">Services</a></li>
+        <li><a href="#section-3" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <div class="hero-bg-lines" aria-hidden="true">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="hero-content">
+        <span class="hero-tag reveal-hero">— Minimal & Modern</span>
+        <h1 class="hero-title reveal-hero delay-1">
+          Creative<br><em>Experiences</em>
+        </h1>
+        <p class="hero-desc reveal-hero delay-2">
+          Smooth. Fast. Beautiful. Crafted with purpose and precision for the modern web.
+        </p>
+        <a href="#section-1" class="btn-primary reveal-hero delay-3">Explore <span class="btn-arrow" aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-scroll-hint reveal-hero delay-4" aria-hidden="true">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll</span>
+      </div>
     </section>
 
-    <section>
-        <div class="container reveal">
-            <h2>Your title</h2>
-            <div class="cards">
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-            </div>
+    <!-- Section 1 — Features -->
+    <section id="section-1" class="content-section light-section" aria-label="Features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — Features</span>
+          <h2 class="section-title">What We Offer</h2>
+          <p class="section-sub">Carefully designed to deliver the best user experience at every touchpoint.</p>
         </div>
-    </section>
-    <section>
-        <div class="container reveal">
-            <h2>Your title</h2>
-            <div class="cards">
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-            </div>
+        <div class="cards">
+          <article class="text-card reveal delay-1">
+            <div class="card-icon" aria-hidden="true">⚡</div>
+            <h3>Performance</h3>
+            <p>Blazing fast load times with optimized assets and clean code architecture built for speed.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-2">
+            <div class="card-icon" aria-hidden="true">🎨</div>
+            <h3>Design</h3>
+            <p>Pixel-perfect UI with consistent spacing, typography, and a minimal visual language.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-3">
+            <div class="card-icon" aria-hidden="true">📱</div>
+            <h3>Responsive</h3>
+            <p>Mobile-first approach ensuring your experience is flawless on every screen size.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
         </div>
-    </section>
-    <section>
-        <div class="container reveal">
-            <h2>Your title</h2>
-            <div class="cards">
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-                <div class="text-card">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est non eos alias cum excepturi eveniet
-                        dolorum nisi nihil! Laudantium, ad.</p>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
+    <!-- Section 2 — Services -->
+    <section id="section-2" class="content-section dark-section" aria-label="Services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Services</span>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-sub">From concept to launch, we handle everything with care and precision.</p>
+        </div>
+        <div class="cards">
+          <article class="text-card reveal delay-1">
+            <div class="card-icon" aria-hidden="true">🔍</div>
+            <h3>Strategy</h3>
+            <p>Deep research and planning to align technology decisions with business goals effectively.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-2">
+            <div class="card-icon" aria-hidden="true">🛠️</div>
+            <h3>Development</h3>
+            <p>Clean, maintainable code following modern best practices and web standards.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-3">
+            <div class="card-icon" aria-hidden="true">🚀</div>
+            <h3>Launch</h3>
+            <p>Seamless deployment with monitoring, optimization and ongoing support after go-live.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 — About -->
+    <section id="section-3" class="content-section light-section" aria-label="About">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — About</span>
+          <h2 class="section-title">Why Choose Us</h2>
+          <p class="section-sub">We believe in simplicity, quality and building things that last.</p>
+        </div>
+        <div class="cards">
+          <article class="text-card reveal delay-1">
+            <div class="card-icon" aria-hidden="true">💡</div>
+            <h3>Innovation</h3>
+            <p>Always pushing boundaries using cutting-edge technologies to deliver unique solutions.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-2">
+            <div class="card-icon" aria-hidden="true">🤝</div>
+            <h3>Collaboration</h3>
+            <p>Transparent communication and partnership throughout every phase of your project.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+          <article class="text-card reveal delay-3">
+            <div class="card-icon" aria-hidden="true">✨</div>
+            <h3>Quality</h3>
+            <p>Uncompromising attention to detail in every line of code, pixel, and interaction.</p>
+            <div class="card-line" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo" aria-hidden="true">OS</span>
+      <p class="footer-copy">&copy; 2026 Powered by <strong>tulkinovdev</strong>. All rights reserved.</p>
+      <button id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+  </footer>
+
+  <script src="js/index.js" defer></script>
 </body>
 
 </html>
