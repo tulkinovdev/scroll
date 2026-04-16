@@ -23,8 +23,8 @@ https://project-scroll.netlify.app
 /
 ├── css/
 │   └── style.css
-├── images/
-│   └── pictures
+├── img/
+│   └── images
 ├── js/
 │   └── index.js
 │
@@ -44,5 +44,3 @@ git clone https://github.com/tulkinovdev/scroll.git
 
 - This is the old version of the Scroll Template.
 - New design will be available in the Master branch.
-
-test
